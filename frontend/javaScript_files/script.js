@@ -15,7 +15,7 @@ let editBookingId= localStorage.getItem("editBookingId");
 
 if (editBookingId) {
 
-    fetch(`http://localhost:5000/api/booking/${editBookingId}`)
+    fetch(`https://cab-web-backend.onrender.com/api/booking/${editBookingId}`)
         .then(response => response.json())
         .then(result => {
 
@@ -95,10 +95,10 @@ if(bookingForm){
    
     try {
     const user = JSON.parse(localStorage.getItem("cabUser"));
-    let url = "http://localhost:5000/api/booking/create";
+    let url = "https://cab-web-backend.onrender.com/api/booking/create";
     let method = "POST";
     if(editBookingId){
-    url = `http://localhost:5000/api/booking/update/${editBookingId}`;
+    url = `https://cab-web-backend.onrender.com/api/booking/update/${editBookingId}`;
     method="PUT";
     }
     const response = await fetch(url, {

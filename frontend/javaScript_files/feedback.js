@@ -92,7 +92,7 @@ submitBtn.addEventListener("click", function(){
 
     const user = JSON.parse(localStorage.getItem("cabUser"));
 
-fetch("http://localhost:5000/api/feedback/create", {
+fetch("https://cab-web-backend.onrender.com/api/feedback/create", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"

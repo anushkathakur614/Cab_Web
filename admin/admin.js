@@ -1,7 +1,7 @@
 console.log("Admin Dashboard Loaded");
 
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = "https://cab-web-backend.onrender.com/api";
 
 
 // Fetch Bookings

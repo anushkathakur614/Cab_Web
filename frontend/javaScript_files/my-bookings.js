@@ -15,7 +15,7 @@ async function loadBookings() {
     const user = JSON.parse(localStorage.getItem("cabUser"));
     console.log(user);
     console.log(user.email);
-    const response = await fetch(`http://localhost:5000/api/booking/all/${user.email}`);
+    const response = await fetch(`https://cab-web-backend.onrender.com/api/booking/all/${user.email}`);
     
     const result = await response.json();
     console.log(result);
@@ -132,7 +132,7 @@ async function loadBookings() {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/booking/cancel/${bookingId}`,
+            `https://cab-web-backend.onrender.com/api/booking/cancel/${bookingId}`,
             {
                 method: "PUT"
             }
