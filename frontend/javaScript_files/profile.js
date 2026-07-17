@@ -17,7 +17,7 @@ if(user){
         user.phone;
 }
 else{
-    window.location.href="login.html";
+    window.location.href="HTML_Files/login.html";
 }
 
 /* Total Booking Count */
