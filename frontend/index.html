@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../CSS_files/style.css">
+    <link rel="stylesheet" href="../CSS_files/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+      <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <h2>YourCab</h2>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="vehicle.html">Vehicle Details</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="menu-container">
+               <button id="menuBtn" class="menu-btn">
+                   ☰
+               </button>
+               <div id="dropdownMenu" class="dropdown-menu">
+                  <a href="profile.html" id="profileLink">My Profile</a>
+                  <a href="login.html" id="loginLink">Login</a>
+                  <a href="#" id="logoutLink">Logout</a>
+                  <a href="my-bookings.html" id="myBookingLink">My Bookings</a>
+                  <a href="feedback.html" id=" ">Feedback</a>
+                  <a href="settings.html" id=" ">Settings</a>
+                  
+               </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Reliable Cab Service <br>
+                for Every Journey
+            </h1>
+
+            <p>
+                Safe, comfortable and affordable rides for local travel,
+                airport transfers and outstation trips.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="booking_page.html"><button class="btn-1">Book Ride</button></a>
+               <a href="tel:9654778385"><button class="btn-2">Call Now</button></a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="../images/car1_img.jpeg" alt="Cab">
+        </div>
+
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking">
+
+        <div class="booking-box">
+
+            <input type="text" id="pickup" placeholder="Pickup Location">
+
+            <input type="text" id="drop" placeholder="Drop Location">
+
+            <input type="date" id="travelDate">
+
+            <input type="time" id="travelTime">
+
+            <select id="tripType">
+                <option>Select Trip Type</option>
+                <option>Local</option>
+                <option>Airport</option>
+                <option>Outstation</option>
+            </select>
+
+            <button id="searchCabBtn">Search Cab</button>
+
+        </div>
+
+    </section>
+    <section class="route-result">
+        <h2>Trip Details</h2>
+        <p><strong>Distance:</strong>
+        <span id="distance">--</span></p>
+        <p><strong>Estimated Time:</strong>
+        <span id="duration">--</span></p>
+
+        <!--Google Map-->
+         <div id="map"></div>
+    </section>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../javaScript_files/script.js"></script>
+    
+</body>
+</html>
