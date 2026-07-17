@@ -1,0 +1,791 @@
+ @media (max-width:1024px){
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-image img{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .booking-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .vehicle-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-story{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-section{
+        grid-template-columns: 1fr;
+    }
+}
+    
+@media (max-width:768px){
+
+    /* home.html */
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 8%;
+    }
+
+    .hero-content h1{
+        font-size: 40px;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-image img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .booking-box{
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner h1{
+        font-size: 38px;
+    }
+
+    /* service.html */
+
+    .why-services h2,
+    .vehicle-features h2,
+    .gallery-heading h2,
+    .about-content h2{
+        font-size: 32px;
+    }
+    
+    /* vehicle.html */
+
+    .vehicle-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vehicle-card img{
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* about.html */
+
+    .about-story{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* contact.html */
+
+    .contact-section{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form,
+    .info-box{
+        width: 100%;
+    }
+     .contact-section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-form{
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        width: 100%;
+    }
+    /* register.html */
+
+     .auth-container{
+        flex-direction:column;
+    }
+
+    .auth-left{
+        padding:40px 20px;
+    }
+
+    .auth-left h1{
+        font-size:34px;
+    }
+
+    .auth-left p{
+        font-size:16px;
+    }
+
+    .auth-right{
+        padding:30px 20px;
+    }
+
+    .auth-card{
+        max-width:500px;
+        padding:35px 25px;
+    }
+
+    /* login.html */
+
+    .login-section{
+        flex-direction:column;
+        padding:60px 20px;
+        gap:40px;
+    }
+
+    .login-left{
+        width:100%;
+        text-align:center;
+    }
+
+    .login-left h1{
+        font-size:40px;
+    }
+
+    .login-left p{
+        font-size:16px;
+    }
+
+    .login-box{
+        width:100%;
+        max-width:450px;
+        padding:35px 25px;
+    }
+
+    .login-box h2{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .login-box form{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .login-box input{
+        width:100%;
+        font-size:15px;
+    }
+
+    .login-box button{
+        width:100%;
+        font-size:16px;
+    }
+
+    .register-link{
+        text-align:center;
+    }
+
+    /* profile.html */
+
+    .profile-page{
+        padding:20px;
+    }
+
+    .profile-card{
+        width:100%;
+        max-width:450px;
+        padding:30px 20px;
+    }
+
+    .profile-avatar{
+        width:100px;
+        height:100px;
+        font-size:50px;
+    }
+
+    .profile-header h1{
+        font-size:28px;
+    }
+
+    .welcome{
+        font-size:15px;
+    }
+
+    .detail{
+        padding:12px;
+        font-size:15px;
+    }
+
+    .profile-buttons{
+        flex-direction:column;
+    }
+
+    .profile-buttons button,
+    .home-btn{
+        width:100%;
+        font-size:15px;
+        padding:14px;
+    }
+
+    /* booking_page.html */
+
+    #bookingForm{
+    grid-template-columns: 1fr;
+    }
+    #bookingForm textarea,#bookingForm button{
+    grid-column: span 1;
+    }
+    .booking-container{
+    padding: 25px;
+    }
+    .booking-container h2{
+    font-size: 30px;
+    }
+
+    /* my-bookings.html*/
+
+    .my-bookings{
+        padding:60px 5%;
+    }
+
+    .my-bookings h1{
+        font-size:28px;
+    }
+
+    #searchInput{
+        font-size:15px;
+        padding:12px;
+    }
+
+    .booking-card{
+        padding:20px;
+    }
+
+    .booking-card h3{
+        font-size:22px;
+    }
+
+    .booking-card p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .booking-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .booking-buttons button{
+        flex:1;
+        min-width:140px;
+        margin-right:0;
+        padding:12px;
+        font-size:15px;
+    }
+
+    .cancelled-btn{
+        font-size:15px;
+    }
+
+    /* feedback.html */
+
+    .feedback-section{
+        padding:30px 15px;
+    }
+
+    .feedback-card{
+        width:100%;
+        max-width:500px;
+        padding:30px 25px;
+    }
+
+    .feedback-card h2{
+        font-size:28px;
+    }
+
+    .feedback-card p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .star{
+        font-size:32px;
+    }
+
+    .emoji{
+        font-size:30px;
+        margin:0 6px;
+    }
+
+    .input-group input,
+    .input-group textarea{
+        font-size:15px;
+    }
+
+    #submitFeedback{
+        font-size:16px;
+        padding:13px;
+    }
+
+    /* settings.html */
+
+    .settings-page{
+        padding:30px 20px;
+    }
+
+    .settings-card{
+        width:100%;
+        max-width:450px;
+        padding:30px;
+    }
+
+    .settings-card h2{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .setting-item{
+        margin:20px 0;
+    }
+
+    .setting-item label{
+        font-size:16px;
+    }
+
+    .setting-item select,
+    .setting-item input{
+        font-size:15px;
+    }
+
+    .home-btn{
+        width:100%;
+        margin-top:20px;
+        padding:14px;
+        font-size:15px;
+    }
+    
+}
+
+ @media (max-width:480px){
+
+    .navbar{
+        padding: 15px 5%;
+    }
+
+    .hero-content h1{
+        font-size: 30px;
+    }
+
+    .hero-content p{
+        font-size: 14px;
+    }
+
+    .book-btn,
+    .btn-1,
+    .btn-2{
+        width: 100%;
+    }
+
+    .hero-buttons{
+        flex-direction: column;
+    }
+
+    .page-banner{
+        padding: 70px 5%;
+    }
+
+    .page-banner h1{
+        font-size: 30px;
+    }
+
+    .service-card,
+    .feature,
+    .feature-box,
+    .box,
+    .faq-item{
+        padding: 20px;
+    }
+
+    .vehicle-card{
+        padding: 20px;
+    }
+
+    .breadcrumb{
+        font-size: 14px;
+    }
+
+    .cta h2{
+        font-size: 26px;
+    }
+
+    .cta button{
+        width: 100%;
+    }
+
+    .whatsapp-btn{
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    /* register.html */
+
+    .auth-left{
+        padding:30px 15px;
+    }
+
+    .auth-left h1{
+        font-size:28px;
+    }
+
+    .auth-left p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .auth-right{
+        padding:20px 15px;
+    }
+
+    .auth-card{
+        width:100%;
+        padding:25px 18px;
+        border-radius:15px;
+    }
+
+    .auth-card h2{
+        font-size:22px;
+    }
+
+    .auth-card input{
+        padding:12px;
+        font-size:14px;
+    }
+
+    .auth-card button{
+        padding:12px;
+        font-size:15px;
+    }
+
+    .login-link{
+        font-size:14px;
+    }
+
+    /* login.html */
+
+    .login-section{
+        padding:40px 15px;
+        gap:30px;
+    }
+
+    .login-left h1{
+        font-size:30px;
+    }
+
+    .login-left p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .login-box{
+        width:100%;
+        padding:25px 18px;
+        border-radius:15px;
+    }
+
+    .login-box h2{
+        font-size:22px;
+        text-align:center;
+        margin-bottom:18px;
+    }
+
+    .login-box form{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .login-box input{
+        width:100%;
+        padding:12px;
+        font-size:14px;
+    }
+
+    .login-box button{
+        width:100%;
+        padding:12px;
+        font-size:15px;
+    }
+
+    .register-link{
+        text-align:center;
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    /* profile.html */
+
+    .profile-page{
+        padding:15px;
+    }
+
+    .profile-card{
+        padding:25px 15px;
+        border-radius:15px;
+    }
+
+    .profile-avatar{
+        width:80px;
+        height:80px;
+        font-size:40px;
+    }
+
+    .profile-header h1{
+        font-size:22px;
+    }
+
+    .welcome{
+        font-size:14px;
+    }
+
+    .detail{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:6px;
+        font-size:14px;
+        padding:10px;
+    }
+
+    .label{
+        font-size:14px;
+    }
+
+    .profile-buttons button,
+    .home-btn{
+        font-size:14px;
+        padding:12px;
+    }
+
+    /* my-booking.html */
+     
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .my-bookings{
+        padding:40px 15px;
+    }
+
+    .my-bookings h1{
+        font-size:24px;
+    }
+
+    #searchInput{
+        padding:12px;
+        font-size:14px;
+    }
+
+    .booking-card{
+        padding:18px;
+        border-radius:12px;
+    }
+
+    .booking-card h3{
+        font-size:20px;
+        word-break:break-word;
+    }
+
+    .booking-card p{
+        font-size:14px;
+        line-height:1.6;
+        word-break:break-word;
+    }
+
+    .status{
+        font-size:13px;
+        padding:6px 12px;
+    }
+
+    .booking-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .booking-buttons button,
+    .cancelled-btn{
+        width:100%;
+        margin-right:0;
+        padding:12px;
+        font-size:14px;
+    }
+
+    /* fedback.html */
+
+    .back-btn{
+        margin:15px;
+    }
+
+    .back-btn a{
+        display:inline-block;
+        padding:10px 15px;
+        font-size:14px;
+    }
+
+    .feedback-section{
+        padding:20px 12px;
+    }
+
+    .feedback-card{
+        width:100%;
+        padding:22px 18px;
+        border-radius:15px;
+    }
+
+    .feedback-card h2{
+        font-size:22px;
+    }
+
+    .feedback-card p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    .rating{
+        margin:20px 0;
+    }
+
+    .star{
+        font-size:28px;
+        margin:0 2px;
+    }
+
+    .input-group{
+        margin:16px 0;
+    }
+
+    .input-group label{
+        font-size:14px;
+    }
+
+    .input-group input,
+    .input-group textarea{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .emoji-box{
+        margin:20px 0;
+    }
+
+    .emoji-box p{
+        font-size:15px;
+    }
+
+    .emoji{
+        font-size:26px;
+        margin:0 3px;
+        padding:6px;
+    }
+
+    #submitFeedback{
+        font-size:15px;
+        padding:12px;
+    }
+
+    #successMsg{
+        font-size:14px;
+    }
+
+    /* settings.html */
+
+    .settings-page{
+        padding:20px 15px;
+    }
+
+    .settings-card{
+        width:100%;
+        padding:25px 18px;
+        border-radius:15px;
+    }
+
+    .settings-card h2{
+        font-size:24px;
+        margin-bottom:20px;
+    }
+
+    .setting-item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+        margin:18px 0;
+    }
+
+    .setting-item label{
+        font-size:15px;
+    }
+
+    .setting-item select{
+        width:100%;
+        padding:10px;
+        font-size:14px;
+        border-radius:8px;
+    }
+
+    .setting-item input[type="checkbox"]{
+        transform:scale(1.3);
+    }
+
+    .home-btn{
+        width:100%;
+        margin-top:20px;
+        padding:12px;
+        font-size:14px;
+    }
+
+
+
+}

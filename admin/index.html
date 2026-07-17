@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Thakur Tours & Travels</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    
+    <div class="sidebar">
+        <h2>YourCab</h2>
+
+        <ul>
+            <li onclick="goToDashboard()">Dashboard</li>
+            <li onclick="goToBookings()">Bookings</li>
+            <li onclick="goToFeedback()">Feedback</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+
+    
+    <div class="main-content">
+
+        <div class="topbar">
+            <h1>Admin Dashboard</h1>
+        </div>
+
+
+        
+        <div class="cards" id="dashboard">
+
+            <div class="card">
+                <h3>Total Bookings</h3>
+                <p id="totalBookings">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Confirmed</h3>
+                <p id="confirmedBookings">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pendingBookings">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Cancelled</h3>
+                <p id="cancelledBookings">0</p>
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="section" id="bookings">
+
+            <h2>Recent Bookings</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Pickup</th>
+                        <th>Drop</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+
+                <tbody id="bookingTable">
+
+                    <tr>
+                        <td colspan="5">
+                            No bookings available
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+    
+
+        <div class="section" id="feedback">
+
+            <h2>Customer Feedback</h2>
+
+            <div id="feedbackContainer">
+
+                <p>No feedback available</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+<script src="admin.js"></script>
+
+</body>
+</html>

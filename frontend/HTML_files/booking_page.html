@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="../CSS_files/style.css">
+    <link rel="stylesheet" href="../CSS_files/responsive.css">
+</head>
+<body>
+    <section class="page-banner">
+        <div class="hero-overlay">
+             <h1>Book Your Ride</h1>
+             <p>We offer affordable prices for cab services.</p>
+        </div>
+    </section>
+     <div class="breadcrumb">
+        <a href="home.html">Home</a></div>
+    <section class="booking-page">
+        <div class="booking-container">
+            <h2>Book Your Ride</h2>
+            <p>Fill in your travel details and reserve your cab.</p>
+            <form action="" id="bookingForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="pick" placeholder="Pickup Location" required>
+                <input type="text" id="drop" placeholder="Drop Location" required>
+                <input type="date" id="journey-date"  required>
+
+                <select  id="vehicle" required>
+                    <option>Sedan</option>
+                    <option>Ertiga</option>
+                    <option>SUV</option>
+                    <option>Innova</option>
+                </select>
+                <textarea id="message" placeholder="Enter any special requests (Optional)"> </textarea>
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </section>
+    <section class="booking-summary">
+        <h2>Booking Summary</h2>
+        <div id="summary-box">
+            <p>Your booking details...</p>
+        </div>
+    </section>
+    <p id="successMessage"></p>
+    <script src="../javaScript_files/script.js"></script>
+
+</body>
+</html>

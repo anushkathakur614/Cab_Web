@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    min-height:100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("images/car_img.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.auth-container{
+    min-height:100vh;
+    display: flex;
+}
+.auth-left{
+    flex:1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+.auth-left h1{
+    font-size:50px;
+    margin-bottom: 25px;
+}
+.auth-left p{
+    max-width: 400px;
+    line-height: 1.8;
+}
+.auth-right{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-card{
+    width: 400px;
+    padding: 40px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.auth-card h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.auth-card form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.auth-card input{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.auth-card button{
+    padding:15px;
+    border:none;
+    border-radius: 10px;
+    background:#ff6b35;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.auth-card button:hover{
+    background: #e85f2b;
+}
+.login-link{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.login-link a{
+    color:#ff6b35;
+    text-decoration: none;
+}
