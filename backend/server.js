@@ -7,7 +7,7 @@ const feedbackRoutes = require("./routes/feedbackRoutes")
 const app = express();
 
 
-app.use(cors({origin:"http://127.0.0.1:5500"}));
+app.use(cors({origin:["http://127.0.0.1:5500","https://cab-web-eight.vercel.app","https://cabweb.netlify.app/"]}));
 app.use(express.json());
 app.use("/api/auth",authRoutes);
 app.use("/api/booking",bookingRoutes);
