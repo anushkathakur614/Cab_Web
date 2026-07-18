@@ -45,12 +45,18 @@
     }
 
     .nav-links{
-        display: flex;
+        display: none;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
-
+    .nav-links.active{
+        display: flex;
+    }
+    .menu-btn{
+        display: block;
+    }
     .hero{
         flex-direction: column;
         text-align: center;
