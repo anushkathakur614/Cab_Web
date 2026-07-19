@@ -23,6 +23,9 @@ body{
     list-style: none;
     
 }
+.logo{
+    text-align:left;
+}
 
 .nav-links a{
     text-decoration: none;

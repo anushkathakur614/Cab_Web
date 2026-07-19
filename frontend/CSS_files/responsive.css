@@ -40,8 +40,24 @@
 
     .navbar{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         gap: 20px;
+        padding: 15px 20px;
+        position: relative;
+        
+    }
+    .logo{
+        flex:1;
+        text-align: left;
+    }
+    .menu-container{
+        position: absolute;
+        top: 3px;
+        margin:2;
+        right:10px;
+        
     }
 
     .nav-links{
@@ -411,6 +427,10 @@
 
     .navbar{
         padding: 15px 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .hero-content h1{
